@@ -121,6 +121,8 @@ def get_and_process_data(data_dir):
                                       #& (obs['point_cloud'][:,:,0] > -0.75)
                                       #)
 
+    #TODO change mask up to your configuration of pcd
+
     mask = ((obs['depth'] > 0) & (obs['depth']/1000 < 1.2))
 
 
